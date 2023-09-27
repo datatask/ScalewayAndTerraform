@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  team-builder:
+    image: ${image}
+    container_name: team-builder
+    ports:
+      - "8080:8080"
+    restart: always
+    env_file:
+      - team-builder.env
+    
